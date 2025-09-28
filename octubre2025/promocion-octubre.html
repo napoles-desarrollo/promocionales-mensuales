@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorios Napoles - Activa tu Salud</title>
+    <style>
+        /* ------------------- RESET ------------------- */
+        body,
+        table,
+        td,
+        p,
+        a,
+        li,
+        blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            width: 100% !important;
+            min-width: 100%;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ------------------- TABLAS PRINCIPALES ------------------- */
+        .outer-table {
+            width: 100% !important;
+            max-width: 100% !important;
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+        }
+
+        /* ------------------- LOGO Y HEADER ------------------- */
+        .logo {
+            text-align: center;
+            padding: 30px 0 10px;
+        }
+
+        .logo-img {
+            width: 150px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .header-title {
+            color: white;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.2;
+            font-size: 32px;
+        }
+
+        .header-subtitle {
+            color: white;
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            line-height: 1.3;
+        }
+
+        /* ------------------- SECCIONES ------------------- */
+        .section {
+            padding: 15px 20px;
+        }
+
+        .content-table {
+            width: 100%;
+            background-color: white;
+            border-radius: 15px;
+        }
+
+        .content-cell {
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        .content-title,
+        .content-title-2 {
+            color: #2f4792;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .content-title {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .content-title-2 {
+            font-size: 18px;
+        }
+
+        .content-text {
+            font-size: 14px;
+            color: #2f4792;
+            line-height: 1.4;
+            margin: 8px 0;
+        }
+
+        .highlight {
+            color: #2f4792;
+            font-weight: bold;
+        }
+
+        .image-cell {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .image-style {
+            border-radius: 10px;
+            max-width: 100%;
+        }
+
+        /* ------------------- SECCIÓN AZUL ------------------- */
+        .blue-container {
+            width: 100%;
+            background-color: #2f4792;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .blue-header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .blue-title {
+            color: white;
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .service-table {
+            width: 100%;
+            margin-bottom: 12px;
+            table-layout: fixed;
+        }
+
+        .service-item {
+            background-color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            color: #1e3a8a;
+            font-size: 12px;
+        }
+
+        .service-detail {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .price-cell {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: right;
+            width: 30%;
+        }
+
+        .price-note {
+            font-size: 11px;
+            font-weight: normal;
+        }
+
+        .constrained-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* ------------------- FOOTER ------------------- */
+        .footer {
+            padding: 20px 0 30px;
+        }
+
+        .footer-cell {
+            text-align: center;
+            padding: 0 10px;
+            vertical-align: top;
+        }
+
+        .contact-button {
+            background-color: #2f4792;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            color: #2f4792;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .social-icon {
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 6px;
+        }
+
+        .website {
+            color: #2f4792;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* ------------------- MEDIA QUERIES SEGMENTADAS ------------------- */
+
+
+        /* 601px a 650px */
+        @media screen and (min-width: 601px) and (max-width: 650px) {
+            .main-container {
+                width: 100% !important;
+            }
+
+            .header-title {
+                font-size: 28px !important;
+            }
+
+            .header-subtitle {
+                font-size: 16px !important;
+            }
+
+            .content-title,
+            .content-title-2 {
+                font-size: 18px !important;
+            }
+
+            .blue-title {
+                font-size: 20px !important;
+            }
+
+            .service-item {
+                font-size: 12px !important;
+            }
+
+            .price-cell {
+                font-size: 18px !important;
+            }
+
+            .constrained-image {
+                max-width: 90px !important;
+                margin-left: 9vh !important;
+            }
+        }
+
+        /* ====== 571px – 600px ====== */
+        @media screen and (min-width: 571px) and (max-width: 600px) {
+            .main-container {
+                width: 100% !important;
+            }
+
+            .header-title {
+                font-size: 26px !important;
+            }
+
+            .header-subtitle {
+                font-size: 15px !important;
+            }
+
+            .content-title,
+            .content-title-2 {
+                font-size: 17px !important;
+            }
+
+            .blue-title {
+                font-size: 19px !important;
+            }
+
+            .service-item {
+                font-size: 11px !important;
+            }
+
+            .image-cell {
+                border-radius: 5% !important;
+            }
+
+            .image-style {
+                border-radius: 100px !important;
+                width: 180px;
+                padding: 0 40px 0 40px !important;
+            }
+
+            .price-cell {
+                font-size: 17px !important;
+            }
+
+            .constrained-image {
+                max-width: 85px !important;
+                margin-left: 8vh !important;
+            }
+        }
+
+        /* ====== 541px – 570px ====== */
+        @media screen and (min-width: 541px) and (max-width: 570px) {
+            .main-container {
+                width: 100% !important;
+            }
+
+            .header-title {
+                font-size: 25px !important;
+            }
+
+            .header-subtitle {
+                font-size: 14px !important;
+            }
+
+            .content-title,
+            .content-title-2 {
+                font-size: 16px !important;
+            }
+
+            .blue-title {
+                font-size: 18px !important;
+            }
+
+            .service-item {
+                font-size: 10px !important;
+            }
+
+            .image-cell {
+                border-radius: 5% !important;
+            }
+
+            .image-style {
+                border-radius: 90px !important;
+                width: 170px;
+                padding: 0 35px 0 35px !important;
+            }
+
+            .price-cell {
+                font-size: 16px !important;
+            }
+
+            .constrained-image {
+                max-width: 80px !important;
+                margin-left: 7vh !important;
+            }
+        }
+
+
+        /* 481px a 540px */
+        @media screen and (min-width: 481px) and (max-width: 540px) {
+            .main-container {
+                width: 100% !important;
+            }
+
+            .header-title {
+                font-size: 24px !important;
+            }
+
+            .header-subtitle {
+                font-size: 14px !important;
+            }
+
+            .content-title,
+            .content-title-2 {
+                font-size: 16px !important;
+            }
+
+            .blue-title {
+                font-size: 18px !important;
+            }
+
+            .service-item {
+                font-size: 10px !important;
+            }
+
+            .price-cell {
+                font-size: 16px !important;
+            }
+
+            .constrained-image {
+                max-width: 80px !important;
+                margin-left: 7vh !important;
+            }
+        }
+
+        /* 341px a 480px */
+        @media screen and (min-width: 344px) and (max-width: 480px) {
+            .header-title {
+                font-size: 24px !important;
+            }
+
+            .content-title,
+            .content-title-2 {
+                font-size: 16px !important;
+            }
+
+            .content-text,
+            .highlight {
+                font-size: 8px !important;
+                text-align: justify;
+            }
+
+            .blue-title {
+                font-size: 16px !important;
+            }
+
+            .service-item {
+                font-size: 8px !important;
+                padding: 6px 12px !important;
+            }
+
+            .service-detail {
+                font-size: 8px !important;
+            }
+
+            .price-cell {
+                font-size: 16px !important;
+            }
+
+            .constrained-image {
+                max-width: 80px !important;
+                margin-left: 3vh !important;
+            }
+
+            .contact-button {
+                font-size: 12px !important;
+                padding: 6px 10px !important;
+            }
+
+            .website {
+                font-size: 16px !important;
+            }
+        }
+
+        /* 341px a 480px */
+        @media screen and (min-width: 341px) and (max-width: 343px) {
+            .header-title {
+                font-size: 24px !important;
+            }
+
+            .content-title,
+            .content-title-2 {
+                font-size: 16px !important;
+            }
+
+            .content-text,
+            .highlight {
+                font-size: 8px !important;
+                text-align: justify;
+            }
+
+            .blue-title {
+                font-size: 16px !important;
+            }
+
+            .service-item {
+                font-size: 7px !important;
+                padding: 2px 12px !important;
+            }
+
+            .service-detail {
+                font-size: 7px !important;
+            }
+
+            .price-cell {
+                font-size: 16px !important;
+            }
+
+            .constrained-image {
+                max-width: 80px !important;
+                margin-left: 3vh !important;
+            }
+
+            .contact-button {
+                font-size: 12px !important;
+                padding: 6px 10px !important;
+            }
+
+            .website {
+                font-size: 16px !important;
+            }
+        }
+
+
+        /* 321px a 340px */
+        @media screen and (min-width: 321px) and (max-width: 340px) {
+            .header-title {
+                font-size: 20px !important;
+            }
+
+            .content-title,
+            .content-title-2 {
+                font-size: 8px !important;
+            }
+
+            .content-text {
+                font-size: 6px !important;
+            }
+
+            .blue-title {
+                font-size: 8px !important;
+
+            }
+
+            .highlight {
+                font-size: 8px !important;
+                font-weight: bold;
+            }
+
+            .image-cell {
+                width: 120px !important;
+            }
+
+            .service-item {
+                font-size: 7px !important;
+                padding: 6px 10px !important;
+            }
+
+            .service-detail {
+                font-size: 7px !important;
+            }
+
+            .price-cell {
+                font-size: 10px !important;
+            }
+
+            .price-note {
+                font-size: 7px !important;
+            }
+
+            .constrained-image {
+                max-width: 50px !important;
+            }
+
+            .contact-button {
+                font-size: 11px !important;
+                padding: 5px 8px !important;
+            }
+
+            .contact-info,
+            .brand-name {
+                font-size: 11px !important;
+            }
+
+            .website {
+                font-size: 14px !important;
+
+            }
+
+        }
+
+        /* 266px a 320px */
+        @media screen and (min-width: 266px) and (max-width: 320px) {
+            .header-title {
+                font-size: 22px !important;
+            }
+
+            .content-title,
+            .content-title-2 {
+                font-size: 8px !important;
+            }
+
+            .content-text,
+            .highlight {
+                font-size: 6px !important;
+                text-align: justify;
+            }
+
+            .blue-title {
+                font-size: 8px !important;
+
+            }
+
+            .service-item {
+                font-size: 5px !important;
+                padding: 4px 6px !important;
+            }
+
+            .service-detail {
+                font-size: 5px !important;
+            }
+
+            .price-cell {
+                font-size: 7px !important;
+            }
+
+            .price-note {
+                font-size: 4px !important;
+            }
+
+            .constrained-image {
+                max-width: 40px !important;
+                margin-left: 2.4vh !important;
+            }
+
+            .contact-button {
+                font-size: 11px !important;
+                padding: 5px 8px !important;
+            }
+
+            .contact-info,
+            .brand-name {
+                font-size: 11px !important;
+            }
+
+            .website {
+                font-size: 14px !important;
+            }
+
+        }
+
+        /* hasta 265px */
+        @media screen and (max-width: 265px) {
+
+            .content-title,
+            .content-title-2 {
+                font-size: 10px !important;
+            }
+
+            .content-text {
+                font-size: 8px !important;
+            }
+
+            .blue-title {
+                font-size: 8px !important;
+
+            }
+
+            .service-item {
+                font-size: 4px !important;
+                padding: 3px 8px !important;
+            }
+
+            .service-detail {
+                font-size: 4px !important;
+            }
+
+            .price-cell {
+                font-size: 6px !important;
+                margin-right: -15px !important;
+            }
+
+            .price-note {
+                font-size: 4px !important;
+            }
+
+            .constrained-image {
+                max-width: 60px !important;
+                margin-left: 2.1vh !important;
+            }
+
+            .contact-info,
+            .brand-name {
+                font-size: 7px !important;
+            }
+        }
+    </style>
+
+
+    <!--[if mso]>
+    <style type="text/css">
+    body, table, td {
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+    /* Prevenir división de palabras en Outlook */
+    .service-item strong {
+        mso-text-raise: -3pt;
+        letter-spacing: 0.5pt;
+    }
+    .no-wrap {
+        mso-text-raise: -2pt;
+        white-space: nowrap !important;
+    }
+    <![endif]-->
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <center class="wrapper" style="width: 100%; table-layout: fixed; ">
+        <div class="webkit" style="max-width: 600px; margin: 0 auto; ">
+            <!--[if (gte mso 9)|(IE)]>
+            <table width="600" align="center" style="border-collapse: collapse;">
+            <tr>
+            <td style="padding: 0;">
+            <![endif]-->
+            <table class="outer-table" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                style="border-collapse: collapse; margin: 0 auto; max-width: 600px; ">
+                <tr>
+                    <td align="center" valign="top" style="padding: 0;">
+                        <!-- Fondo como imagen para clientes que no soportan background CSS -->
+                        <div style="background: url('images/fondo.png') no-repeat center top / cover; ">
+                            <table class="main-container" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                style="border-collapse: collapse; max-width: 600px;">
+
+                                <tr>
+                                    <td class="logo" style="padding: 30px 0 10px 0; text-align: center;">
+                                        <img class="logo-img"
+                                            src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/septiembre2025/images/logo-napoles.png"
+                                            alt="Logo"
+                                            style="border: 0; outline: none; text-decoration: none; display: inline-block; width: 150px; max-width: 100%; height: auto;">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="header" style="padding: 10px 20px; text-align: center;">
+                                        <h2 class="header-title"
+                                            style="margin: 0; color: white; font-size: 32px; font-weight: 700; line-height: 1.2;">
+                                            ACTIVA TU SALUD</h2>
+                                        <p class="header-subtitle"
+                                            style="margin: 10px 0 0 0; color: white; font-size: 18px; line-height: 1.3;">
+                                            Prevención que salva vidas #OctubreRosa.</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="section" style="padding: 15px 20px;">
+                                        <table class="content-table" border="0" cellspacing="0" cellpadding="0"
+                                            width="100%"
+                                            style="width: 100%; background-color: white; border-radius: 15px;">
+                                            <tr>
+                                                <td class="content-cell" width="50%"
+                                                    style="padding: 20px 15px; vertical-align: top;">
+                                                    <h3 class="content-title"
+                                                        style="margin: 0 0 12px 0; color: #2f4792; font-size: 20px; font-weight: 700; text-align: center;">
+                                                        MES DE CONCIENTIZACIÓN CÁNCER DE MAMA.</h3>
+                                                    <p class="content-text"
+                                                        style="margin: 8px 0; color: #2f4792; font-size: 14px; line-height: 1.4;">
+                                                        Este Octubre Rosa, queremos recordarte que <strong>la detección
+                                                            temprana
+                                                            puede salvar vidas.</strong> Tomarte unos minutos para
+                                                        <strong>autoexplorarte,</strong>
+                                                        acudir a tus revisiones médicas y estar atenta a cualquier
+                                                        cambio en tus senos no es solo un acto de prevención, es un
+                                                        <strong>acto
+                                                            de amor propio.</strong>
+                                                    </p>
+                                                </td>
+                                                <td class="image-cell" width="50%"
+                                                    style="padding: 15px; text-align: center; vertical-align: middle;">
+                                                    <img class="image-style" src="images/imagen1.bmp"
+                                                        alt="Cuidado Infantil"
+                                                        style="border-radius: 10px; max-width: 100%; ">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="section" style="padding: 15px 20px;">
+                                        <table class="content-table" border="0" cellspacing="0" cellpadding="0"
+                                            width="100%"
+                                            style="width: 100%; background-color: white; border-radius: 15px;">
+                                            <tr>
+                                                <td class="image-cell" width="50%"
+                                                    style="padding: 15px; text-align: center; vertical-align: middle;">
+                                                    <img class="image-style" src="images/imagen2.bmp"
+                                                        alt="Bandera Mexicana"
+                                                        style="border-radius: 10px; max-width: 100%; ">
+                                                </td>
+                                                <td class="content-cell" width="50%"
+                                                    style="padding: 20px 15px; vertical-align: top;">
+                                                    <h3 class="content-title-2"
+                                                        style="color: #2f4792; font-size: 20px; font-weight: 700; text-align: center;">
+                                                        ¿SABÍAS QUE?</h3>
+                                                    <p class="content-text"
+                                                        style="margin: 8px 0; color: #2f4792; font-size: 14px; line-height: 1.4;">
+                                                        La detección temprana es clave para <strong>prevenir complicaciones y
+                                                        mejorar el pronóstico.</strong> Gracias a análisis especializados, como
+                                                        <strong>marcadores tumorales, mastografías y exámenes de imagen,</strong> es
+                                                        posible identificar cambios en el tejido mamario incluso antes
+                                                        de que aparezcan síntomas.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="blue-section" style="padding: 15px 20px;">
+                                        <table class="blue-container" border="0" cellspacing="0" cellpadding="0"
+                                            width="100%"
+                                            style="width: 100%; background-color: #2f4792; border-radius: 15px; overflow: hidden;">
+                                            <tr>
+                                                <td class="blue-header"
+                                                    style="padding: 20px 20px 10px 20px; text-align: center;">
+                                                    <h3 class="blue-title"
+                                                        style="margin: 0; color: white; font-size: 22px;"><strong
+                                                            style="font-weight: bold;">Detecta a Tiempo,</strong>
+                                                        protege tu salud.</h3>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="blue-content" style="padding: 0 0 1px 20px;">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                                                        style="width: 100%; table-layout: fixed;">
+                                                        <tr>
+                                                            <td width="70%" valign="top" style="vertical-align: top;">
+                                                                <table class="service-table" border="0" cellspacing="0"
+                                                                    cellpadding="0" width="100%"
+                                                                    style="width: 100%; margin-bottom: 12px; table-layout: fixed;">
+                                                                    <tr>
+                                                                        <td class="service-item"
+                                                                            style="background-color: white; padding: 10px 15px; border-radius: 20px; color: #1e3a8a; font-size: 12px;">
+                                                                            <!--[if mso]>
+                                                                        <span style="mso-text-raise: -3pt; letter-spacing: 0.5pt; font-size:8px;">• PERFIL HOROMONAL</span>
+                                                                        <![endif]-->
+                                                                            <!--[if !mso]><!-->
+                                                                            <strong>• PERFIL HOROMONAL</strong>
+                                                                            <!--<![endif]-->
+                                                                        </td>
+                                                                        <td class="price-cell" width="30%"
+                                                                            style="color: white; font-size: 20px; font-weight: bold; padding-left: 10px; white-space: nowrap; text-align: right; vertical-align: middle; width: 30%;">
+                                                                            $1,150 <span class="price-note"
+                                                                                style="font-size: 11px; font-weight: normal;">PESOS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+
+                                                                <table class="service-table" border="0" cellspacing="0"
+                                                                    cellpadding="0" width="100%"
+                                                                    style="width: 100%; margin-bottom: 12px; table-layout: fixed;">
+                                                                    <tr>
+                                                                        <td class="service-item"
+                                                                            style="background-color: white; padding: 10px 15px; border-radius: 20px; color: #1e3a8a; font-size: 12px;">
+                                                                            <strong>• ANTÍGENO CA-15.3</strong>
+                                                                        </td>
+                                                                        <td class="price-cell" width="30%"
+                                                                            style="color: white; font-size: 20px; font-weight: bold; padding-left: 10px; white-space: nowrap; text-align: right; vertical-align: middle; width: 30%;">
+                                                                            $300 <span class="price-note"
+                                                                                style="font-size: 11px; font-weight: normal;">PESOS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+
+                                                                <table class="service-table" border="0" cellspacing="0"
+                                                                    cellpadding="0" width="100%"
+                                                                    style="width: 100%; margin-bottom: 12px; table-layout: fixed;">
+                                                                    <tr>
+                                                                        <td class="service-item"
+                                                                            style="background-color: white; padding: 10px 15px; border-radius: 20px; color: #1e3a8a; font-size: 12px;">
+                                                                            <strong>• USG DE MAMA</strong>
+                                                                        </td>
+                                                                        <td class="price-cell" width="30%"
+                                                                            style="color: white; font-size: 20px; font-weight: bold; padding-left: 10px; white-space: nowrap; text-align: right; vertical-align: middle; width: 30%;">
+                                                                            $320 <span class="price-note"
+                                                                                style="font-size: 11px; font-weight: normal;">PESOS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                 <table class="service-table" border="0" cellspacing="0"
+                                                                    cellpadding="0" width="100%"
+                                                                    style="width: 100%; margin-bottom: 12px; table-layout: fixed;">
+                                                                    <tr>
+                                                                        <td class="service-item"
+                                                                            style="background-color: white; padding: 10px 15px; border-radius: 20px; color: #1e3a8a; font-size: 12px;">
+                                                                            <strong>• PRUEBA DE VPH POR PCR</strong>
+                                                                        </td>
+                                                                        <td class="price-cell" width="30%"
+                                                                            style="color: white; font-size: 20px; font-weight: bold; padding-left: 10px; white-space: nowrap; text-align: right; vertical-align: middle; width: 30%;">
+                                                                            $2,400 <span class="price-note"
+                                                                                style="font-size: 11px; font-weight: normal;">PESOS</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td class="image-container-cell" width="30%"
+                                                                style="vertical-align: bottom; text-align: right; padding-right: 0; width: 30%;">
+                                                                <img class="constrained-image"
+                                                                    src="images/imagen3.png"
+                                                                    alt="Persona"
+                                                                    style="max-width: 100%; height: auto; display: block; margin-right: 0;">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="footer" style="padding: 20px 0 30px 0;">
+                                        <table class="footer-table" border="0" cellspacing="0" cellpadding="0"
+                                            width="100%" style="width: 100%;">
+                                            <tr>
+                                                <td class="footer-cell" width="30%"
+                                                    style="padding: 0 10px; text-align: center; vertical-align: top; width: 30%;">
+                                                    <a class="contact-button" href="#" target="_blank"
+                                                        style="background-color: #2f4792; color: #FFFFFF; text-decoration: none; padding: 8px 12px; border-radius: 25px; font-weight: bold; font-size: 14px; display: inline-block; margin-bottom: 8px;">contáctanos</a>
+                                                    <div>
+                                                        <img class="contact-icon"
+                                                            src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/septiembre2025/images/whatsapp-icon.png"
+                                                            alt="WhatsApp"
+                                                            style="vertical-align: middle; margin-right: 4px; display: inline-block; width: 16px; height: 16px;">
+                                                        <span class="contact-info"
+                                                            style="color: #2f4792; font-size: 12px; font-weight: bold; display: inline-block;">(993)
+                                                            235 5413</span>
+                                                    </div>
+                                                </td>
+                                                <td class="footer-cell" width="40%"
+                                                    style="padding: 0 10px; text-align: center; vertical-align: top; width: 40%;">
+                                                    <div class="brand-name"
+                                                        style="color: #2f4792; font-size: 14px; font-weight: bold; margin-bottom: 8px; white-space: nowrap;">
+                                                        <span class="brand-text"
+                                                            style="vertical-align: middle;">Laboratorios Napoles</span>
+                                                        <img class="social-icon"
+                                                            src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/septiembre2025/images/icon1.png"
+                                                            alt="Facebook"
+                                                            style="vertical-align: middle; margin-left: 6px; display: inline-block; width: 14px; height: 14px;">
+                                                        <img class="social-icon"
+                                                            src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/septiembre2025/images/icon2.png"
+                                                            alt="Instagram"
+                                                            style="vertical-align: middle; margin-left: 6px; display: inline-block; width: 14px; height: 14px;">
+                                                        <img class="social-icon"
+                                                            src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/septiembre2025/images/icon3.png"
+                                                            alt="TikTok"
+                                                            style="vertical-align: middle; margin-left: 6px; display: inline-block; width: 14px; height: 14px;">
+                                                    </div>
+                                                    <div class="website"
+                                                        style="color: #2f4792; font-size: 20px; font-weight: bold;">
+                                                        www.labnapoles.mx
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </div>
+    </center>
+</body>
+
+</html>
