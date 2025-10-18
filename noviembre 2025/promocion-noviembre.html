@@ -52,7 +52,6 @@
         .main-container {
             max-width: 600px;
             margin: 0 auto;
-            /* URL de fondo por defecto */
             background-image: url('https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/septiembre2025/images/Fondo.png');
             background-repeat: no-repeat;
             background-position: center top;
@@ -62,65 +61,70 @@
         /* ------------------- LOGO Y HEADER ------------------- */
         .logo {
             text-align: center;
-            padding: 30px 0 10px;
+            padding: 35px 0 20px;
         }
 
         .logo-img {
-            width: 150px;
+            width: 170px;
             max-width: 100%;
             height: auto;
         }
 
         .header {
             text-align: center;
-            padding: 10px 20px;
+            padding: 15px 20px 25px;
         }
 
         .header-title {
             color: white;
-            font-weight: 700;
+            font-weight: 900;
             margin: 0;
-            line-height: 1.2;
-            font-size: 32px;
+            line-height: 1.1;
+            font-size: 42px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .header-subtitle {
             color: white;
-            margin: 10px 0 0 0;
-            font-size: 18px;
+            margin: 15px 0 0 0;
+            font-size: 19px;
             line-height: 1.3;
+            font-weight: 400;
         }
 
         /* ------------------- SECCIONES BLANCAS ------------------- */
         .section {
-            padding: 15px 20px;
+            padding: 12px 20px;
         }
 
         .content-table {
             width: 100%;
             background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
         }
 
         .content-cell {
-            padding: 15px;
-            vertical-align: top;
+            padding: 25px 20px;
+            vertical-align: middle;
         }
 
         .content-title {
             color: #2f4792;
             font-weight: 700;
             text-align: center;
-            font-size: 20px;
-            margin-bottom: 12px;
+            font-size: 22px;
+            margin: 0 0 18px 0;
+            line-height: 1.2;
         }
 
         .content-text {
-            font-size: 14px;
+            font-size: 15px;
             color: #2f4792;
-            line-height: 1.4;
-            margin: 8px 0;
+            line-height: 1.5;
+            margin: 12px 0;
+            text-align: left;
         }
 
         .highlight {
@@ -131,10 +135,11 @@
         .image-cell {
             text-align: center;
             vertical-align: middle;
+            padding: 25px 20px;
         }
 
         .image-style {
-            border-radius: 10px;
+            border-radius: 15px;
             max-width: 100%;
             object-fit: cover;
             height: auto;
@@ -142,171 +147,236 @@
 
         /* ------------------- SECCIÓN BANNER AZUL (BUEN FIN) ------------------- */
         .buen-fin-section {
-            padding: 15px 20px;
+            padding: 12px 20px;
         }
 
         .buen-fin-container {
             width: 100%;
             background-color: #2f4792;
-            border-radius: 15px;
+            border-radius: 20px;
             overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
         }
-        
-        /* Contenedor interno del banner para el contenido */
+
         .buen-fin-content {
             width: 100%;
             padding: 0;
         }
-        
+
         .buen-fin-cell-left {
-            padding: 15px 10px 15px 15px;
+            padding: 25px 15px;
             text-align: center;
             vertical-align: middle;
             width: 60%;
         }
 
         .buen-fin-cell-right {
-            padding: 15px 15px 15px 10px;
+            padding: 25px 15px;
             text-align: center;
             vertical-align: middle;
             width: 40%;
+        }
+
+        .buen-fin-logo-discount {
+            margin: 0 0 10px 0;
+        }
+
+        .buen-fin-logo {
+            width: 90px;
+            height: auto;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 15px;
         }
 
         .buen-fin-discount {
             color: white;
             font-weight: 900;
             line-height: 1;
+            font-size: 60px;
+            display: inline-block;
+            vertical-align: middle;
         }
-        
+
         .buen-fin-title {
-            font-size: 16px;
+            font-size: 18px;
             color: white;
             font-weight: 700;
-            margin: 0;
-            line-height: 1.2;
+            margin: 8px 0 10px 0;
+            line-height: 1.3;
+            text-transform: uppercase;
         }
 
         .buen-fin-details {
-            font-size: 12px;
+            font-size: 14px;
             color: white;
-            margin: 5px 0 0 0;
+            margin: 8px 0;
+            font-weight: 700;
+            text-transform: uppercase;
         }
-        
+
         .buen-fin-note {
-            font-size: 10px;
+            font-size: 11px;
             color: white;
-            margin-top: 5px;
-            line-height: 1.2;
+            margin-top: 10px;
+            line-height: 1.4;
+            font-weight: 400;
         }
 
         .buen-fin-image {
             max-width: 100%;
             height: auto;
-            border-radius: 10px;
+            border-radius: 12px;
             object-fit: cover;
         }
 
         /* ------------------- SECCIÓN AZUL (ESTUDIOS) ------------------- */
+        .blue-section {
+            padding: 12px 20px;
+        }
+
         .blue-container {
             width: 100%;
             background-color: #2f4792;
-            border-radius: 15px;
+            border-radius: 20px;
             overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
         }
 
         .blue-header {
             text-align: center;
-            padding: 20px;
+            padding: 25px 20px 18px;
         }
 
         .blue-title {
             color: white;
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 700;
             margin: 0;
+            line-height: 1.3;
+        }
+
+        .blue-content {
+            padding: 0 20px 25px 20px;
         }
 
         .service-table {
             width: 100%;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             table-layout: fixed;
         }
 
         .service-item {
             background-color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
+            padding: 12px 20px;
+            border-radius: 30px;
             color: #1e3a8a;
-            font-size: 12px;
+            font-size: 14px;
+            font-weight: 700;
+            vertical-align: middle;
         }
 
         .price-cell {
             color: white;
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 28px;
+            font-weight: 900;
             text-align: right;
-            width: 30%;
-            padding-left: 10px;
+            width: 35%;
+            padding-left: 15px;
+            vertical-align: middle;
+            line-height: 1;
         }
 
         .price-note {
-            font-size: 11px;
-            font-weight: normal;
+            font-size: 13px;
+            font-weight: 400;
+            display: block;
+            margin-top: 3px;
         }
 
         .constrained-image {
             max-width: 100%;
             height: auto;
+            display: block;
         }
 
         /* ------------------- FOOTER ------------------- */
         .footer {
-            padding: 20px 0 30px;
+            padding: 30px 0 40px;
+        }
+
+        .footer-table {
+            width: 100%;
         }
 
         .footer-cell {
             text-align: center;
             padding: 0 10px;
-            vertical-align: top;
+            vertical-align: middle;
         }
 
         .contact-button {
             background-color: #2f4792;
             color: #fff;
             text-decoration: none;
-            padding: 8px 12px;
-            border-radius: 25px;
-            font-weight: bold;
-            font-size: 14px;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 15px;
             display: inline-block;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+            text-transform: lowercase;
         }
 
         .contact-info {
             color: #2f4792;
-            font-size: 12px;
-            font-weight: bold;
+            font-size: 14px;
+            font-weight: 700;
             display: inline-block;
         }
 
-        .social-icon {
-            width: 14px;
-            height: 14px;
+        .contact-icon {
+            width: 18px;
+            height: 18px;
             display: inline-block;
             vertical-align: middle;
-            margin-left: 6px;
+            margin-right: 6px;
+        }
+
+        .social-icon {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+
+        .brand-name {
+            color: #2f4792;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
         }
 
         .website {
             color: #2f4792;
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 24px;
+            font-weight: 700;
         }
 
-        /* ------------------- MEDIA QUERIES (Ajustar según necesidad) ------------------- */
+        /* ------------------- MEDIA QUERIES ------------------- */
         @media screen and (max-width: 480px) {
+            .logo-img {
+                width: 140px !important;
+            }
+
             .header-title {
-                font-size: 28px !important;
+                font-size: 32px !important;
+                letter-spacing: 1px !important;
+            }
+
+            .header-subtitle {
+                font-size: 16px !important;
             }
 
             .content-title {
@@ -314,141 +384,212 @@
             }
 
             .content-text {
-                font-size: 12px !important;
+                font-size: 13px !important;
+            }
+
+            .buen-fin-logo {
+                width: 65px !important;
+            }
+
+            .buen-fin-discount {
+                font-size: 42px !important;
             }
 
             .buen-fin-title {
-                font-size: 14px !important;
+                font-size: 15px !important;
             }
-            
-            .buen-fin-discount {
-                font-size: 28px !important;
+
+            .buen-fin-details {
+                font-size: 12px !important;
             }
-            
+
+            .buen-fin-note {
+                font-size: 10px !important;
+            }
+
             .buen-fin-cell-left {
                 width: 55% !important;
+                padding: 20px 12px !important;
             }
-            
+
             .buen-fin-cell-right {
                 width: 45% !important;
+                padding: 20px 12px !important;
             }
 
             .blue-title {
+                font-size: 20px !important;
+            }
+
+            .service-item {
+                font-size: 11px !important;
+                padding: 10px 15px !important;
+            }
+
+            .price-cell {
+                font-size: 22px !important;
+            }
+
+            .price-note {
+                font-size: 11px !important;
+            }
+
+            .contact-button {
+                font-size: 14px !important;
+                padding: 10px 20px !important;
+            }
+
+            .website {
+                font-size: 20px !important;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .buen-fin-discount {
+                font-size: 32px !important;
+            }
+
+            .price-cell {
                 font-size: 18px !important;
             }
 
             .service-item {
                 font-size: 10px !important;
             }
-
-            .price-cell {
-                font-size: 16px !important;
-            }
-        }
-
-        /* Ajustes específicos para móviles muy pequeños */
-        @media screen and (max-width: 320px) {
-            .buen-fin-discount {
-                font-size: 20px !important;
-            }
-
-            .price-cell {
-                font-size: 14px !important;
-            }
-
-            .price-note {
-                font-size: 9px !important;
-            }
         }
     </style>
-
-
 </head>
 
 <body style="margin: 0; padding: 0;">
-    <center class="wrapper" style="width: 100%; table-layout: fixed; ">
-        <div class="webkit" style="max-width: 600px; margin: 0 auto; ">
+    <center class="wrapper" style="width: 100%; table-layout: fixed;">
+        <div class="webkit" style="max-width: 600px; margin: 0 auto;">
             <table class="outer-table" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-                style="border-collapse: collapse; margin: 0 auto; max-width: 600px; ">
+                style="border-collapse: collapse; margin: 0 auto; max-width: 600px;">
                 <tr>
                     <td align="center" valign="top" style="padding: 0;">
                         <div
-                            style="background: url('https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/septiembre2025/images/Fondo.png') no-repeat center top / cover; ">
+                            style="background: url('https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/septiembre2025/images/Fondo.png') no-repeat center top / cover;">
                             <table class="main-container" width="100%" border="0" cellspacing="0" cellpadding="0"
                                 style="border-collapse: collapse; max-width: 600px;">
 
+                                <!-- LOGO -->
                                 <tr>
-                                    <td class="logo" style="padding: 30px 0 10px 0; text-align: center;">
+                                    <td class="logo" style="padding: 35px 0 20px 0; text-align: center;">
                                         <img class="logo-img"
                                             src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/logo-napoles.png"
                                             alt="LABORATORIOS NAPOLES"
-                                            style="border: 0; outline: none; text-decoration: none; display: inline-block; width: 150px; max-width: 100%; height: auto;">
+                                            style="border: 0; outline: none; text-decoration: none; display: inline-block; width: 170px; max-width: 100%; height: auto;">
                                     </td>
                                 </tr>
 
+                                <!-- HEADER -->
                                 <tr>
-                                    <td class="header" style="padding: 10px 20px;">
+                                    <td class="header" style="padding: 15px 20px 25px;">
                                         <h2 class="header-title"
-                                            style="margin: 0; color: white; font-size: 32px; font-weight: 700; line-height: 1.2;">
+                                            style="margin: 0; color: white; font-size: 42px; font-weight: 900; line-height: 1.1; text-transform: uppercase; letter-spacing: 2px;">
                                             ACTIVA TU SALUD</h2>
                                         <p class="header-subtitle"
-                                            style="margin: 10px 0 0 0; color: white; font-size: 18px; line-height: 1.3;">
+                                            style="margin: 15px 0 0 0; color: white; font-size: 19px; line-height: 1.3; font-weight: 400;">
                                             Este noviembre, actívate por tu salud.</p>
                                     </td>
                                 </tr>
 
+                                <!-- SECCIÓN 1: MES MUNDIAL DE LA DIABETES -->
                                 <tr>
-                                    <td class="section" style="padding: 15px 20px;">
+                                    <td class="section" style="padding: 12px 20px;">
                                         <table class="content-table" border="0" cellspacing="0" cellpadding="0"
                                             width="100%"
-                                            style="width: 100%; background-color: white; border-radius: 15px;">
+                                            style="width: 100%; background-color: white; border-radius: 20px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);">
                                             <tr>
                                                 <td class="content-cell" width="50%"
-                                                    style="padding: 20px 15px; vertical-align: top;">
+                                                    style="padding: 25px 20px; vertical-align: middle;">
                                                     <h3 class="content-title"
-                                                        style="margin: 0 0 12px 0; color: #2f4792; font-size: 20px; font-weight: 700; text-align: center;">
-                                                        MES MUNDIAL DE LA DIABETES.</h3>
+                                                        style="margin: 0 0 18px 0; color: #2f4792; font-size: 22px; font-weight: 700; text-align: center; line-height: 1.2;">
+                                                        MES MUNDIAL DE LA<br>DIABETES.</h3>
                                                     <p class="content-text"
-                                                        style="margin: 8px 0; color: #2f4792; font-size: 14px; line-height: 1.4;">
-                                                        Este mes hacemos conciencia sobre la importancia de prevenir y
-                                                        detectar a tiempo la diabetes.</p>
-                                                    <p class="content-text"
-                                                        style="margin: 8px 0; color: #2f4792; font-size: 14px; line-height: 1.4;">
-                                                        Mantén un estilo de vida saludable, realiza chequeos
-                                                        periódicos y cuida tu salud. ¡La prevención está en tus manos!</p>
+                                                        style="margin: 12px 0; color: #2f4792; font-size: 15px; line-height: 1.5; text-align: left;">
+                                                        Este mes hacemos conciencia sobre la importancia de
+                                                        <strong>prevenir y
+                                                            detectar a tiempo la diabetes.</strong>Mantén un estilo de
+                                                        vida saludable, realiza <strong>chequeos
+                                                            periódicos y cuida tu salud.</strong> ¡La prevención está en
+                                                        tus manos!</p>
                                                 </td>
                                                 <td class="image-cell" width="50%"
-                                                    style="padding: 15px; text-align: center; vertical-align: middle;">
-                                                    <img class="image-style" src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/seccion1.jpg"
+                                                    style="padding: 25px 20px; text-align: center; vertical-align: middle;">
+                                                    <img class="image-style"
+                                                        src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/seccion1.jpg"
                                                         alt="Medición de Glucosa"
-                                                        style="border-radius: 10px; max-width: 100%; ">
+                                                        style="border-radius: 15px; max-width: 100%; height: auto; display: block; margin: 0 auto; border: 0;">
                                                 </td>
                                             </tr>
                                         </table>
                                     </td>
                                 </tr>
 
+                                <!-- BANNER BUEN FIN -->
                                 <tr>
-                                    <td class="buen-fin-section" style="padding: 15px 20px;">
+                                    <td class="buen-fin-section" style="padding: 12px 20px;">
                                         <table class="buen-fin-container" border="0" cellspacing="0" cellpadding="0"
                                             width="100%"
-                                            style="width: 100%; background-color: #2f4792; border-radius: 15px; overflow: hidden;">
+                                            style="width: 100%; background-color: #2f4792; border-radius: 20px; overflow: hidden; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);">
                                             <tr>
-                                                <td class="buen-fin-content" style="padding: 0;">
+                                                <td style="padding: 0;">
+                                                    <!-- Diseño horizontal con 3 columnas -->
                                                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                         <tr>
-                                                            <td class="buen-fin-cell-left" style="width: 60%; padding: 15px 10px 15px 15px; text-align: center; vertical-align: middle;">
-                                                                <p style="margin: 0; display: inline-block;">
-                                                                    <img src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/buenfin.png" alt="BUEN FIN" style="width: 70px; height: auto; display: inline-block; vertical-align: middle; margin-right: 10px;">
-                                                                    <span class="buen-fin-discount" style="font-size: 40px; display: inline-block; vertical-align: middle;">15%</span>
-                                                                </p>
-                                                                <p class="buen-fin-title" style="margin-top: 5px;">ESTE BUEN FIN, ¡CUIDA TU SALUD!</p>
-                                                                <p class="buen-fin-details" style="font-weight: bold; margin: 0 0 5px 0;">DESCUENTOS en todos nuestros servicios.</p>
-                                                                <p class="buen-fin-note">Válido del 13 al 17 de Noviembre del 2025. No aplica con otras promociones o descuentos vigentes.</p>
+                                                            <!-- COLUMNA 1: Logo y Texto izquierda -->
+                                                            <td width="28%"
+                                                                style="padding: 20px 10px; text-align: center; vertical-align: middle;">
+                                                                <img src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/buenfin.png"
+                                                                    alt="BUEN FIN"
+                                                                    style="width: 85px; height: auto; display: block; margin: 0 auto 12px; border: 0;">
+                                                                <p
+                                                                    style="margin: 0; font-size: 16px; color: white; font-weight: 700; line-height: 1.2; text-transform: uppercase;">
+                                                                    ESTE BUEN FIN,<br>¡CUIDA TU SALUD!</p>
                                                             </td>
-                                                            <td class="buen-fin-cell-right" style="width: 40%; padding: 15px 15px 15px 10px; text-align: center; vertical-align: middle;">
-                                                                <img class="buen-fin-image" src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/seccion2.png"
-                                                                    alt="Promoción" style="max-width: 100%; height: auto; display: block;">
+
+                                                            <!-- COLUMNA 2: 15% DESCUENTOS y cuadro blanco -->
+                                                            <td width="42%"
+                                                                style="padding: 20px 10px; text-align: center; vertical-align: middle;">
+                                                                <!-- Porcentaje grande -->
+                                                                <p
+                                                                    style="margin: 0 0 8px 0; font-size: 70px; font-weight: 900; color: white; line-height: 0.9;">
+                                                                    15%</p>
+                                                                <p
+                                                                    style="margin: 0 0 8px 0; font-size: 18px; color: white; font-weight: 700; line-height: 1.2; text-transform: uppercase;">
+                                                                    DESCUENTOS</p>
+                                                                <p
+                                                                    style="margin: 0 0 15px 0; font-size: 14px; color: white; font-weight: 400; line-height: 1.3;">
+                                                                    en todos nuestros servicios.</p>
+
+                                                                <!-- Cuadro Blanco -->
+                                                                <table width="100%" border="0" cellspacing="0"
+                                                                    cellpadding="0"
+                                                                    style="max-width: 280px; margin: 0 auto;">
+                                                                    <tr>
+                                                                        <td
+                                                                            style="background-color: white; border-radius: 10px; padding: 10px 12px; text-align: center; box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);">
+                                                                            <p
+                                                                                style="margin: 0 0 5px 0; font-size: 10px; color: #2f4792; line-height: 1.3; font-weight: 400;">
+                                                                                *Válido del <strong>13 al 17 de
+                                                                                    Noviembre del 2025.</strong> *No
+                                                                                aplica con otras promociones o
+                                                                                descuentos vigentes.
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+
+                                                            <!-- COLUMNA 3: Imagen de la mujer -->
+                                                            <td width="30%"
+                                                                style="padding: 0; text-align: right; vertical-align: bottom; position: relative;">
+                                                                <div style="position: relative; display: inline-block;">
+                                                                    <img src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/seccion2.png"
+                                                                        alt="¡AGENDA TU CITA!"
+                                                                        style="max-width: 100%; width: 180px; height: auto; display: block; border: 0; margin: 0;">
+                                                                </div>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -458,120 +599,144 @@
                                     </td>
                                 </tr>
 
+                                <!-- SECCIÓN 2: COLPOSCOPÍA -->
                                 <tr>
-                                    <td class="section" style="padding: 15px 20px;">
+                                    <td class="section" style="padding: 12px 20px;">
                                         <table class="content-table" border="0" cellspacing="0" cellpadding="0"
                                             width="100%"
-                                            style="width: 100%; background-color: white; border-radius: 15px;">
+                                            style="width: 100%; background-color: white; border-radius: 20px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);">
                                             <tr>
                                                 <td class="content-cell" width="50%"
-                                                    style="padding: 20px 15px; vertical-align: top;">
+                                                    style="padding: 25px 20px; vertical-align: middle;">
                                                     <h3 class="content-title"
-                                                        style="margin: 0 0 12px 0; color: #2f4792; font-size: 20px; font-weight: 700; text-align: center;">
-                                                        Conoce nuestro servicio <strong
-                                                            class="highlight">COLPOSCOPÍA</strong>
+                                                        style="margin: 0 0 18px 0; color: #2f4792; font-size: 22px; font-weight: 700; text-align: center; line-height: 1.2;">
+                                                        Conoce nuestro servicio<br><strong class="highlight"
+                                                            style="color: #2f4792; font-weight: bold;">COLPOSCOPÍA</strong>
                                                     </h3>
                                                     <p class="content-text"
-                                                        style="margin: 8px 0; color: #2f4792; font-size: 14px; line-height: 1.4;">
-                                                        La colposcopía es un estudio que permite observar con detalle el
-                                                        cuello uterino para detectar a tiempo lesiones o cambios
-                                                        anormales.</p>
+                                                        style="margin: 12px 0; color: #2f4792; font-size: 15px; line-height: 1.5; text-align: left;">
+                                                        La <strong>colposcopía</strong> es un estudio que permite
+                                                        observar con detalle el
+                                                        <strong>cuello uterino para detectar a tiempo lesiones o cambios
+                                                            anormales.</strong>
+                                                    </p>
+
                                                     <p class="content-text"
-                                                        style="margin: 8px 0; color: #2f4792; font-size: 14px; line-height: 1.4; text-align: center;">
-                                                        <strong class="highlight">¡AGENDA TU CITA!</strong>
+                                                        style="margin: 8px 0; color: #2f4792; font-size: 15px; line-height: 1.5; text-align: center;">
+                                                        <strong class="highlight"
+                                                            style="color: #2f4792; font-weight: bold;">¡AGENDA TU
+                                                            CITA!</strong>
                                                     </p>
                                                 </td>
                                                 <td class="image-cell" width="50%"
-                                                    style="padding: 15px; text-align: center; vertical-align: middle;">
-                                                    <img class="image-style" src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/seccion3.jpg"
+                                                    style="padding: 25px 20px; text-align: center; vertical-align: middle;">
+                                                    <img class="image-style"
+                                                        src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/seccion3.jpg"
                                                         alt="Colposcopía"
-                                                        style="border-radius: 10px; max-width: 100%; ">
+                                                        style="border-radius: 15px; max-width: 100%; height: auto; display: block; margin: 0 auto; border: 0;">
                                                 </td>
                                             </tr>
                                         </table>
                                     </td>
                                 </tr>
 
+                                <!-- SECCIÓN AZUL: ESTUDIOS Y PRECIOS -->
                                 <tr>
-                                    <td class="blue-section" style="padding: 15px 20px;">
+                                    <td class="blue-section" style="padding: 12px 20px;">
                                         <table class="blue-container" border="0" cellspacing="0" cellpadding="0"
                                             width="100%"
-                                            style="width: 100%; background-color: #2f4792; border-radius: 15px; overflow: hidden;">
+                                            style="width: 100%; background-color: #2f4792; border-radius: 20px; overflow: hidden; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);">
                                             <tr>
                                                 <td class="blue-header" colspan="2"
-                                                    style="padding: 20px 20px 10px 20px; text-align: center;">
+                                                    style="padding: 25px 20px 18px 20px; text-align: center;">
                                                     <h3 class="blue-title"
-                                                        style="margin: 0; color: white; font-size: 22px;">
+                                                        style="margin: 0; color: white; font-size: 24px; font-weight: 700; line-height: 1.3;">
                                                         Haz de tu salud una prioridad.
                                                     </h3>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td class="blue-content" colspan="2" style="padding: 0 20px 10px 20px;">
+                                                <td class="blue-content" colspan="2" style="padding: 0 20px 25px 20px;">
                                                     <table width="100%" border="0" cellspacing="0" cellpadding="0"
                                                         style="width: 100%; table-layout: fixed;">
                                                         <tr>
-                                                            <td width="70%" valign="top"
-                                                                style="vertical-align: top; padding-right: 10px;">
+                                                            <td width="65%" valign="middle"
+                                                                style="vertical-align: middle; padding-right: 10px;">
 
+                                                                <!-- GLUCOSA -->
                                                                 <table class="service-table" border="0" cellspacing="0"
-                                                                    cellpadding="0" width="100%">
+                                                                    cellpadding="0" width="100%"
+                                                                    style="margin-bottom: 12px;">
                                                                     <tr>
                                                                         <td class="service-item"
-                                                                            style="background-color: white; padding: 8px 15px; border-radius: 20px; color: #1e3a8a; font-size: 12px; vertical-align: middle; width: 70%;">
-                                                                            <strong>• GLUCOSA</strong>
+                                                                            style="background-color: white; padding: 12px 20px; border-radius: 30px; color: #1e3a8a; font-size: 14px; font-weight: 700; vertical-align: middle;">
+                                                                            GLUCOSA
                                                                         </td>
-                                                                        <td class="price-cell" width="30%">
-                                                                            $50 <span class="price-note">PESOS</span>
+                                                                        <td class="price-cell" width="35%"
+                                                                            style="color: white; font-size: 28px; font-weight: 900; text-align: right; padding-left: 15px; vertical-align: middle; line-height: 1;">
+                                                                            $50<span class="price-note"
+                                                                                style="font-size: 13px; font-weight: 400; display: block; margin-top: 3px;">PESOS</span>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
 
+                                                                <!-- HEMOGLOBINA GLICOSILADA -->
                                                                 <table class="service-table" border="0" cellspacing="0"
-                                                                    cellpadding="0" width="100%">
+                                                                    cellpadding="0" width="100%"
+                                                                    style="margin-bottom: 12px;">
                                                                     <tr>
                                                                         <td class="service-item"
-                                                                            style="background-color: white; padding: 8px 15px; border-radius: 20px; color: #1e3a8a; font-size: 12px; vertical-align: middle;">
-                                                                            <strong>• HEMOGLOBINA GLICOSILADA</strong>
+                                                                            style="background-color: white; padding: 12px 20px; border-radius: 30px; color: #1e3a8a; font-size: 14px; font-weight: 700; vertical-align: middle;">
+                                                                            HEMOGLOBINA<br>GLICOSILADA
                                                                         </td>
-                                                                        <td class="price-cell" width="30%">
-                                                                            $240 <span class="price-note">PESOS</span>
+                                                                        <td class="price-cell" width="35%"
+                                                                            style="color: white; font-size: 28px; font-weight: 900; text-align: right; padding-left: 15px; vertical-align: middle; line-height: 1;">
+                                                                            $240<span class="price-note"
+                                                                                style="font-size: 13px; font-weight: 400; display: block; margin-top: 3px;">PESOS</span>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
 
+                                                                <!-- INSULINA BASAL -->
                                                                 <table class="service-table" border="0" cellspacing="0"
-                                                                    cellpadding="0" width="100%">
+                                                                    cellpadding="0" width="100%"
+                                                                    style="margin-bottom: 12px;">
                                                                     <tr>
                                                                         <td class="service-item"
-                                                                            style="background-color: white; padding: 8px 15px; border-radius: 20px; color: #1e3a8a; font-size: 12px; vertical-align: middle;">
-                                                                            <strong>• INSULINA BASAL</strong>
+                                                                            style="background-color: white; padding: 12px 20px; border-radius: 30px; color: #1e3a8a; font-size: 14px; font-weight: 700; vertical-align: middle;">
+                                                                            INSULINA BASAL
                                                                         </td>
-                                                                        <td class="price-cell" width="30%">
-                                                                            $250 <span class="price-note">PESOS</span>
+                                                                        <td class="price-cell" width="35%"
+                                                                            style="color: white; font-size: 28px; font-weight: 900; text-align: right; padding-left: 15px; vertical-align: middle; line-height: 1;">
+                                                                            $250<span class="price-note"
+                                                                                style="font-size: 13px; font-weight: 400; display: block; margin-top: 3px;">PESOS</span>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
 
+                                                                <!-- CURVA DE TOLERANCIA -->
                                                                 <table class="service-table" border="0" cellspacing="0"
-                                                                    cellpadding="0" width="100%">
+                                                                    cellpadding="0" width="100%"
+                                                                    style="margin-bottom: 0;">
                                                                     <tr>
                                                                         <td class="service-item"
-                                                                            style="background-color: white; padding: 8px 15px; border-radius: 20px; color: #1e3a8a; font-size: 12px; vertical-align: middle;">
-                                                                            <strong>• CURVA DE TOLERANCIA A LA
-                                                                                GLUCOSA (3HRS)</strong>
+                                                                            style="background-color: white; padding: 12px 20px; border-radius: 30px; color: #1e3a8a; font-size: 14px; font-weight: 700; vertical-align: middle;">
+                                                                            CURVA DE TOLERANCIA<br>A LA GLUCOSA (3HRS)
                                                                         </td>
-                                                                        <td class="price-cell" width="30%">
-                                                                            $400 <span class="price-note">PESOS</span>
+                                                                        <td class="price-cell" width="35%"
+                                                                            style="color: white; font-size: 28px; font-weight: 900; text-align: right; padding-left: 15px; vertical-align: middle; line-height: 1;">
+                                                                            $400<span class="price-note"
+                                                                                style="font-size: 13px; font-weight: 400; display: block; margin-top: 3px;">PESOS</span>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
                                                             </td>
-                                                            <td class="image-container-cell" width="30%"
-                                                                style="vertical-align: bottom; text-align: right; padding-right: 0; width: 30%;">
+                                                            <td class="image-container-cell" width="35%"
+                                                                style="vertical-align: bottom; text-align: right; padding-right: 0; width: 35%;">
                                                                 <img class="constrained-image"
-                                                                    src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/seccion4.png" alt="Mujer y salud"
-                                                                    style="max-width: 100%; height: auto; display: block; margin-right: 0;">
+                                                                    src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/seccion4.png"
+                                                                    alt="Mujer y salud"
+                                                                    style="max-width: 100%; height: auto; display: block; margin-right: 0; border: 0;">
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -581,44 +746,48 @@
                                     </td>
                                 </tr>
 
+                                <!-- FOOTER -->
                                 <tr>
-                                    <td class="footer" style="padding: 20px 0 30px 0;">
+                                    <td class="footer" style="padding: 30px 0 40px 0;">
                                         <table class="footer-table" border="0" cellspacing="0" cellpadding="0"
                                             width="100%" style="width: 100%;">
                                             <tr>
-                                                <td class="footer-cell" width="30%"
-                                                    style="padding: 0 10px; text-align: center; vertical-align: top; width: 30%;">
+                                                <td class="footer-cell" width="50%"
+                                                    style="padding: 0 10px; text-align: center; vertical-align: middle; width: 50%;">
                                                     <a class="contact-button" href="tel:+529932355413" target="_blank"
-                                                        style="background-color: #2f4792; color: #FFFFFF; text-decoration: none; padding: 8px 12px; border-radius: 25px; font-weight: bold; font-size: 14px; display: inline-block; margin-bottom: 8px;">contáctanos</a>
+                                                        style="background-color: #2f4792; color: #FFFFFF; text-decoration: none; padding: 12px 24px; border-radius: 30px; font-weight: 700; font-size: 15px; display: inline-block; margin-bottom: 12px; text-transform: lowercase;">contáctanos</a>
                                                     <div>
                                                         <img class="contact-icon"
                                                             src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/whatsapp-icon.png"
                                                             alt="WhatsApp"
-                                                            style="vertical-align: middle; margin-right: 4px; display: inline-block; width: 16px; height: 16px;">
+                                                            style="vertical-align: middle; margin-right: 6px; display: inline-block; width: 18px; height: 18px; border: 0;">
                                                         <span class="contact-info"
-                                                            style="color: #2f4792; font-size: 12px; font-weight: bold; display: inline-block;">(993)
+                                                            style="color: #2f4792; font-size: 14px; font-weight: 700; display: inline-block;">(993)
                                                             235 5413</span>
                                                     </div>
                                                 </td>
-                                                <td class="footer-cell" width="40%"
-                                                    style="padding: 0 10px; text-align: center; vertical-align: top; width: 40%;">
+                                                <td class="footer-cell" width="50%"
+                                                    style="padding: 0 10px; text-align: center; vertical-align: middle; width: 50%;">
                                                     <div class="brand-name"
-                                                        style="color: #2f4792; font-size: 14px; font-weight: bold; margin-bottom: 8px; white-space: nowrap;">
+                                                        style="color: #2f4792; font-size: 16px; font-weight: 700; margin-bottom: 12px;">
                                                         <span class="brand-text"
                                                             style="vertical-align: middle;">Laboratorios Napoles</span>
                                                         <img class="social-icon"
                                                             src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/icon1.png"
-                                                            alt="Facebook">
+                                                            alt="Facebook"
+                                                            style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-left: 8px; border: 0;">
                                                         <img class="social-icon"
                                                             src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/icon2.png"
-                                                            alt="Instagram">
+                                                            alt="Instagram"
+                                                            style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-left: 8px; border: 0;">
                                                         <img class="social-icon"
                                                             src="https://cdn.jsdelivr.net/gh/napoles-desarrollo/promocionales-mensuales@main/noviembre%202025/images/icon3.png"
-                                                            alt="TikTok">
+                                                            alt="TikTok"
+                                                            style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-left: 8px; border: 0;">
                                                     </div>
                                                     <div class="website"
-                                                        style="color: #2f4792; font-size: 20px; font-weight: bold;">
-                                                        <a href="www.labnapoles.mx"
+                                                        style="color: #2f4792; font-size: 24px; font-weight: 700;">
+                                                        <a href="http://www.labnapoles.mx"
                                                             style="color: #2f4792; text-decoration: none;">www.labnapoles.mx</a>
                                                     </div>
                                                 </td>
